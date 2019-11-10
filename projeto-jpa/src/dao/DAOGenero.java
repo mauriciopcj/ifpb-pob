@@ -21,7 +21,7 @@ public class DAOGenero  extends DAO<Genero>{
 		
 		try{
 			String nome = (String) chave;
-			Query q = manager.createQuery("select g from Professor g where g.nome= '" + nome +"'");
+			Query q = manager.createQuery("select g from Genero g where g.nome= '" + nome +"'");
 			return (Genero) q.getSingleResult();
 			
 		}catch(NoResultException e){

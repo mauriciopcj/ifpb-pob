@@ -25,41 +25,43 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
+import javax.persistence.Lob;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Filme {
+	
+	private String titulo;
+	private int ano;
+	private String duracao;
+	private String classificacao;
+	private String descricao;
+	
+	// MAPEAMENTO
 	
 	@Id		
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 	
-	
-	private String titulo;
-	
-	
-	private int ano;
-	
-	
-	private String duracao;
-	
-	
+	@Lob
 	private byte[] capa;
 	
-	
-	private String classificacao;
-	
-	
-	private String descricao;
-	
-	@ManyToMany(mappedBy = "filmes", fetch = FetchType.EAGER)
-	@JoinTable(name = "filme_genero", 
-		joinColumns = @JoinColumn(name = "filme",referencedColumnName = "id"),
-		inverseJoinColumns = @JoinColumn(name = "genero",referencedColumnName = "nome")
-	)
+	@ManyToMany(
+			mappedBy = "filmes", 
+			fetch = FetchType.EAGER
+			)
+	@JoinTable(
+			name = "filme_genero",
+			joinColumns = @JoinColumn(name = "filme", referencedColumnName = "id"),
+			inverseJoinColumns = @JoinColumn(name = "genero", referencedColumnName = "nome")
+			)
 	private List<Genero> generos = new ArrayList<Genero>();
 	
-	
+	@OneToMany
+	@JoinColumn(
+			name = "id_filme"
+			)
 	private List<Visualizacao> visualizacoes = new ArrayList<Visualizacao>();
 	
 	// CONSTRUTOR

@@ -58,7 +58,7 @@ public class Cadastrar {
 			System.out.println(u);
 			u = Fachada.cadastrarUsuario("Rafael", "rafael@rafael", "456", LocalDate.of(1999, 5, 30));
 			System.out.println(u);
-			
+		
 			// GENEROS
 						
 			g = Fachada.cadastrarGenero("Ação");

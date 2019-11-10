@@ -14,16 +14,35 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+@Entity
 public class Usuario {
 	
-	private String nome;
 	private String email;
 	private String senha;
+	
+	// MAPEAMENTO
+	
+	@Id
+	private String nome;
+	
+	@Column(columnDefinition = "DATE")
 	private LocalDate dataNasc;
-	private int vicioLVL = 0;
+	
+	@OneToMany(
+			mappedBy = "usuario",
+			fetch = FetchType.LAZY
+			)
 	private List<Visualizacao> visualizacoes = new ArrayList<Visualizacao>();
 
 	// CONSTRUCTOR
+	
+	public Usuario() {}
 	
 	public Usuario(String nome, String email, String senha, LocalDate dataNasc){
 		this.nome = nome;
@@ -83,14 +102,6 @@ public class Usuario {
 
 	public void setDataNasc(LocalDate dataNasc) {
 		this.dataNasc = dataNasc;
-	}
-	
-	public int getVicioLVL() {
-		return vicioLVL;
-	}
-
-	public void setVicioLVL(int vicioLVL) {
-		this.vicioLVL = vicioLVL;
 	}
 	
 	public List<Visualizacao> getVisualizacoes() {

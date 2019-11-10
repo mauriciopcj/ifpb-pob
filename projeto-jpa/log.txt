@@ -1,0 +1,90 @@
+[EL Fine]: server: 2019-11-10 13:59:18.663--Thread(Thread[AWT-EventQueue-0,6,main])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+[EL Config]: metadata: 2019-11-10 13:59:18.78--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class modelo.Genero] is set to [FIELD].
+[EL Config]: metadata: 2019-11-10 13:59:18.797--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the many to many mapping element [field filmes] is being defaulted to: class modelo.Filme.
+[EL Config]: metadata: 2019-11-10 13:59:18.798--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class modelo.Filme] is set to [FIELD].
+[EL Config]: metadata: 2019-11-10 13:59:18.8--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the one to many mapping element [field visualizacoes] is being defaulted to: class modelo.Visualizacao.
+[EL Config]: metadata: 2019-11-10 13:59:18.802--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the many to many mapping element [field generos] is being defaulted to: class modelo.Genero.
+[EL Config]: metadata: 2019-11-10 13:59:18.802--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class modelo.Visualizacao] is set to [FIELD].
+[EL Config]: metadata: 2019-11-10 13:59:18.803--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the many to one mapping element [field usuario] is being defaulted to: class modelo.Usuario.
+[EL Config]: metadata: 2019-11-10 13:59:18.803--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the many to one mapping element [field filme] is being defaulted to: class modelo.Filme.
+[EL Config]: metadata: 2019-11-10 13:59:18.804--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class modelo.Usuario] is set to [FIELD].
+[EL Config]: metadata: 2019-11-10 13:59:18.804--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the one to many mapping element [field visualizacoes] is being defaulted to: class modelo.Visualizacao.
+[EL Config]: metadata: 2019-11-10 13:59:18.804--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class modelo.Genero] is being defaulted to: Genero.
+[EL Config]: metadata: 2019-11-10 13:59:18.805--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The table name for entity [class modelo.Genero] is being defaulted to: GENERO.
+[EL Config]: metadata: 2019-11-10 13:59:18.813--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2019-11-10 13:59:18.814--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class modelo.Filme] is being defaulted to: Filme.
+[EL Config]: metadata: 2019-11-10 13:59:18.814--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The table name for entity [class modelo.Filme] is being defaulted to: FILME.
+[EL Config]: metadata: 2019-11-10 13:59:18.814--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [capa] is being defaulted to: CAPA.
+[EL Config]: metadata: 2019-11-10 13:59:18.815--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [ano] is being defaulted to: ANO.
+[EL Config]: metadata: 2019-11-10 13:59:18.816--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [titulo] is being defaulted to: TITULO.
+[EL Config]: metadata: 2019-11-10 13:59:18.816--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [classificacao] is being defaulted to: CLASSIFICACAO.
+[EL Config]: metadata: 2019-11-10 13:59:18.816--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [duracao] is being defaulted to: DURACAO.
+[EL Config]: metadata: 2019-11-10 13:59:18.816--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-10 13:59:18.816--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [descricao] is being defaulted to: DESCRICAO.
+[EL Config]: metadata: 2019-11-10 13:59:18.816--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class modelo.Visualizacao] is being defaulted to: Visualizacao.
+[EL Config]: metadata: 2019-11-10 13:59:18.816--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The table name for entity [class modelo.Visualizacao] is being defaulted to: VISUALIZACAO.
+[EL Config]: metadata: 2019-11-10 13:59:18.817--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [data] is being defaulted to: DATA.
+[EL Config]: metadata: 2019-11-10 13:59:18.817--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-10 13:59:18.817--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class modelo.Usuario] is being defaulted to: Usuario.
+[EL Config]: metadata: 2019-11-10 13:59:18.817--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The table name for entity [class modelo.Usuario] is being defaulted to: USUARIO.
+[EL Config]: metadata: 2019-11-10 13:59:18.817--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [senha] is being defaulted to: SENHA.
+[EL Config]: metadata: 2019-11-10 13:59:18.817--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [dataNasc] is being defaulted to: DATANASC.
+[EL Config]: metadata: 2019-11-10 13:59:18.817--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2019-11-10 13:59:18.817--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [email] is being defaulted to: EMAIL.
+[EL Config]: metadata: 2019-11-10 13:59:18.83--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The join table name for the many to many mapping [field filmes] is being defaulted to: GENERO_FILME.
+[EL Config]: metadata: 2019-11-10 13:59:18.83--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The source primary key column name for the many to many mapping [field filmes] is being defaulted to: NOME.
+[EL Config]: metadata: 2019-11-10 13:59:18.831--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The source foreign key column name for the many to many mapping [filmes] is being defaulted to: generos_NOME.
+[EL Config]: metadata: 2019-11-10 13:59:18.831--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The target primary key column name for the many to many mapping [field filmes] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-10 13:59:18.831--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The target foreign key column name for the many to many mapping [filmes] is being defaulted to: filmes_ID.
+[EL Config]: metadata: 2019-11-10 13:59:18.833--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The primary key column name for the mapping element [field visualizacoes] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-10 13:59:18.837--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The primary key column name for the mapping element [field usuario] is being defaulted to: NOME.
+[EL Config]: metadata: 2019-11-10 13:59:18.837--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The foreign key column name for the mapping element [usuario] is being defaulted to: USUARIO_NOME.
+[EL Config]: metadata: 2019-11-10 13:59:18.837--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The primary key column name for the mapping element [field filme] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-10 13:59:18.837--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The foreign key column name for the mapping element [filme] is being defaulted to: FILME_ID.
+[EL Info]: 2019-11-10 13:59:19.259--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--EclipseLink, version: Eclipse Persistence Services - 2.7.5.v20191016-ea124dd158
+[EL Fine]: connection: 2019-11-10 13:59:19.36--Thread(Thread[AWT-EventQueue-0,6,main])--Detected database platform: org.eclipse.persistence.platform.database.PostgreSQLPlatform
+[EL Config]: connection: 2019-11-10 13:59:19.365--ServerSession(887152401)--Connection(640513190)--Thread(Thread[AWT-EventQueue-0,6,main])--connecting(DatabaseLogin(
+	platform=>PostgreSQLPlatform
+	user name=> "postgres"
+	datasource URL=> "jdbc:postgresql://localhost:5434/filmes"
+))
+[EL Config]: connection: 2019-11-10 13:59:19.401--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--Connected: jdbc:postgresql://localhost:5434/filmes
+	User: postgres
+	Database: PostgreSQL  Version: 11.3
+	Driver: PostgreSQL Native Driver  Version: PostgreSQL 9.4 JDBC4.1 (build 1206)
+[EL Info]: connection: 2019-11-10 13:59:19.428--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--/file:/D:/IFPB/POO/ifpb-pob/projeto-jpa/target/classes/_filmes-eclipselink login successful
+[EL Fine]: sql: 2019-11-10 13:59:28.755--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOME, DATANASC, EMAIL, SENHA FROM USUARIO WHERE (NOME = ?)
+	bind => [Mauricio]
+[EL Fine]: sql: 2019-11-10 13:59:42.491--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM FILME
+[EL Fine]: sql: 2019-11-10 13:59:42.503--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT t1.NOME FROM GENERO_FILME t0, GENERO t1 WHERE ((t0.filmes_ID = ?) AND (t1.NOME = t0.generos_NOME))
+	bind => [1]
+[EL Fine]: sql: 2019-11-10 13:59:42.507--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT t1.NOME FROM GENERO_FILME t0, GENERO t1 WHERE ((t0.filmes_ID = ?) AND (t1.NOME = t0.generos_NOME))
+	bind => [2]
+[EL Fine]: sql: 2019-11-10 13:59:42.507--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT t1.NOME FROM GENERO_FILME t0, GENERO t1 WHERE ((t0.filmes_ID = ?) AND (t1.NOME = t0.generos_NOME))
+	bind => [3]
+[EL Fine]: sql: 2019-11-10 13:59:42.508--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT t1.NOME FROM GENERO_FILME t0, GENERO t1 WHERE ((t0.filmes_ID = ?) AND (t1.NOME = t0.generos_NOME))
+	bind => [4]
+[EL Fine]: sql: 2019-11-10 13:59:42.509--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT t1.NOME FROM GENERO_FILME t0, GENERO t1 WHERE ((t0.filmes_ID = ?) AND (t1.NOME = t0.generos_NOME))
+	bind => [5]
+[EL Fine]: sql: 2019-11-10 13:59:42.51--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT t1.NOME FROM GENERO_FILME t0, GENERO t1 WHERE ((t0.filmes_ID = ?) AND (t1.NOME = t0.generos_NOME))
+	bind => [6]
+[EL Fine]: sql: 2019-11-10 13:59:42.511--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT t1.NOME FROM GENERO_FILME t0, GENERO t1 WHERE ((t0.filmes_ID = ?) AND (t1.NOME = t0.generos_NOME))
+	bind => [7]
+[EL Fine]: sql: 2019-11-10 13:59:42.512--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT t1.NOME FROM GENERO_FILME t0, GENERO t1 WHERE ((t0.filmes_ID = ?) AND (t1.NOME = t0.generos_NOME))
+	bind => [8]
+[EL Fine]: sql: 2019-11-10 13:59:42.512--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT t1.NOME FROM GENERO_FILME t0, GENERO t1 WHERE ((t0.filmes_ID = ?) AND (t1.NOME = t0.generos_NOME))
+	bind => [9]
+[EL Fine]: sql: 2019-11-10 13:59:42.52--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM FILME
+[EL Fine]: sql: 2019-11-10 13:59:55.266--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM FILME WHERE (TITULO = ?)
+	bind => [Captain Marvel]
+[EL Fine]: sql: 2019-11-10 13:59:55.279--ClientSession(1196327023)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--INSERT INTO VISUALIZACAO (DATA, FILME_ID, USUARIO_NOME) VALUES (?, ?, ?)
+	bind => [2019-11-10T13:59:55.276, 6, Mauricio]
+[EL Fine]: sql: 2019-11-10 13:59:55.281--ClientSession(1196327023)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--select lastval()
+[EL Fine]: sql: 2019-11-10 13:59:55.286--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATA, FILME_ID, USUARIO_NOME FROM VISUALIZACAO WHERE (id_filme = ?)
+	bind => [6]
+[EL Fine]: sql: 2019-11-10 13:59:55.287--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOME, DATANASC, EMAIL, SENHA FROM USUARIO WHERE (NOME = ?)
+	bind => [Rafael]
+[EL Fine]: sql: 2019-11-10 13:59:55.289--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATA, FILME_ID, USUARIO_NOME FROM VISUALIZACAO WHERE (USUARIO_NOME = ?)
+	bind => [Mauricio]
+[EL Fine]: sql: 2019-11-10 13:59:55.294--ClientSession(1229426948)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--UPDATE VISUALIZACAO SET id_filme = ? WHERE (ID = ?)
+	bind => [6, 12]

@@ -6,8 +6,8 @@
 	<classpathentry kind="lib" path="lib/db4o-8.1.249.16099-cs-java5.jar"/>
 	<classpathentry kind="lib" path="lib/db4o-8.1.249.16099-cs.optional-java5.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="C:/Users/mauriciop/eclipse-workspace/ProjetoPOB_01/lib/DJNativeSwing.jar"/>
-	<classpathentry kind="lib" path="C:/Users/mauriciop/eclipse-workspace/ProjetoPOB_01/lib/DJNativeSwing-SWT.jar"/>
-	<classpathentry kind="lib" path="C:/Users/mauriciop/eclipse-workspace/ProjetoPOB_01/lib/org.eclipse.swt.win32.win32.x86_64-4.3.jar"/>
+	<classpathentry kind="lib" path="D:/IFPB/POO/ifpb-pob/projeto-db4o/lib/DJNativeSwing.jar"/>
+	<classpathentry kind="lib" path="D:/IFPB/POO/ifpb-pob/projeto-db4o/lib/DJNativeSwing-SWT.jar"/>
+	<classpathentry kind="lib" path="D:/IFPB/POO/ifpb-pob/projeto-db4o/lib/org.eclipse.swt.win32.win32.x86_64-4.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

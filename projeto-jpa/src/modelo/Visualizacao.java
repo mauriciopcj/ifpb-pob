@@ -11,14 +11,35 @@ package modelo;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+@Entity
 public class Visualizacao{
 	
+	// MAPEAMENTO
+	
+	@Id		
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private int id;
+	
+	@Column(columnDefinition = "TIMESTAMP")
 	private LocalDateTime data;
+	
+	@ManyToOne
 	private Filme filme;
+	
+	@ManyToOne
 	private Usuario usuario;
 	
 	// CONSTRUCTOR
 
+	public Visualizacao() {}
+	
 	public Visualizacao(Filme filme, Usuario usuario) {
 		this.data = LocalDateTime.now();
 		this.filme = filme;

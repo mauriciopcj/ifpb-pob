@@ -18,6 +18,8 @@ import javax.persistence.ManyToMany;
 @Entity
 public class Genero{
 	
+	//MAPEAMENTO
+	
 	@Id
 	private String nome; 
 	
@@ -25,6 +27,8 @@ public class Genero{
 	private List<Filme> filmes = new ArrayList<Filme>();
 	
 	// CONSTRUTOR
+	
+	public Genero(){}
 	
 	public Genero(String n){
 		this.nome = n;
