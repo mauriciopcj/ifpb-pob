@@ -23,15 +23,19 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Index;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.Lob;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
 
 @Entity
+@Table( indexes = @Index( columnList = "titulo" ))
 public class Filme {
-	
+
 	private String titulo;
 	private int ano;
 	private String duracao;
@@ -58,10 +62,7 @@ public class Filme {
 			)
 	private List<Genero> generos = new ArrayList<Genero>();
 	
-	@OneToMany
-	@JoinColumn(
-			name = "id_filme"
-			)
+	@OneToMany(mappedBy="filme")
 	private List<Visualizacao> visualizacoes = new ArrayList<Visualizacao>();
 	
 	// CONSTRUTOR

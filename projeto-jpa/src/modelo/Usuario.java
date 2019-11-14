@@ -16,11 +16,13 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.Index;
 import javax.persistence.OneToMany;
+import javax.persistence.Table;
 
 @Entity
+@Table( indexes = @Index( columnList = "nome" ))
 public class Usuario {
 	
 	private String email;
@@ -34,10 +36,7 @@ public class Usuario {
 	@Column(columnDefinition = "DATE")
 	private LocalDate dataNasc;
 	
-	@OneToMany(
-			mappedBy = "usuario",
-			fetch = FetchType.LAZY
-			)
+	@OneToMany(mappedBy="usuario")
 	private List<Visualizacao> visualizacoes = new ArrayList<Visualizacao>();
 
 	// CONSTRUCTOR

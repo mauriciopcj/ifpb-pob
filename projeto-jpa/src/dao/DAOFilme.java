@@ -32,7 +32,7 @@ public class DAOFilme  extends DAO<Filme> {
 	//                                                 TODAS AS CONSULTAS DE FILME  //
 
 //	public List<Filme> consultarFilmePorTitulo(String prefixo) {
-//		Query q = manager.query();
+//		Query q = manager.createQuery();
 //		q.constrain(Filme.class);
 //		q.descend("titulo").constrain(prefixo).contains();
 //		List<Filme> result = q.execute(); 

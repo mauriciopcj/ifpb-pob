@@ -13,9 +13,12 @@ import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Index;
 import javax.persistence.ManyToMany;
+import javax.persistence.Table;
 
 @Entity
+@Table( indexes = @Index( columnList = "nome" ))
 public class Genero{
 	
 	//MAPEAMENTO

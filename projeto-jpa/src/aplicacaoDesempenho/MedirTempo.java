@@ -27,7 +27,7 @@ public class MedirTempo {
 			for (int i = 1; i <= 1000; i++){
 				String nome = "genero"+i;
 				Fachada.cadastrarGenero(nome);
-//				Fachada.adicionarFilmeGenero(nome, "Avatar");
+				Fachada.adicionarFilmeGenero(nome, "Avatar");
 //				Fachada.adicionarFilmeGenero(nome, "Hulk");
 			}
 		}
