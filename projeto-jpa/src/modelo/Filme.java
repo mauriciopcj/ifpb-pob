@@ -12,11 +12,9 @@ import java.awt.image.BufferedImage;
 import java.io.BufferedWriter;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.PrintWriter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
@@ -38,6 +36,7 @@ import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.PostPersist;
 import javax.persistence.Table;
+import javax.persistence.Version;
 
 @Entity
 @Table(name = "filme", indexes = { @Index( name= "index_titulo_filme", columnList="titulo" )})
@@ -57,6 +56,9 @@ public class Filme {
 	
 	@Lob
 	private byte[] capa;
+	
+	@Version
+	private int versao;
 	
 	@ManyToMany(
 			mappedBy = "filmes", 
@@ -101,7 +103,7 @@ public class Filme {
 		try {
 			FileWriter fw = new FileWriter(path, true);
 			BufferedWriter conexao = new BufferedWriter(fw);
-			String texto = "Filme = " + titulo + ";" + dataFormatada;
+			String texto = "Filme = " + titulo + " | " + dataFormatada;
 			conexao.write(texto);
 			conexao.newLine();
 			conexao.close();
@@ -149,6 +151,10 @@ public class Filme {
 	}
 	
 	//  GETTERS E SETTERS
+	
+	public int getVersao() {
+		return versao;
+	}
 	
 	public String getTitulo() {
 		return titulo;

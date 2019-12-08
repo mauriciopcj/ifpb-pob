@@ -79,6 +79,7 @@ public class Visualizacao{
 		DateTimeFormatter formatadorBarra = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 		return "-----------------------------\nData    | " + data.format(formatadorBarra) + 
 				"\nFilme   | " + filme.getTitulo() + "\nUsuario | " + usuario.getNome() + 
+				"\nVersão  | " + filme.getVersao() +
 				"\n-----------------------------";
 	}
 
