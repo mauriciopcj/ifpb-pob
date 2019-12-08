@@ -21,7 +21,7 @@ public class DAOGenero  extends DAO<Genero>{
 		
 		try{
 			String nome = (String) chave;
-			Query q = manager.createQuery("select g from Genero g where g.nome= '" + nome +"'");
+			Query q = manager.createQuery("SELECT g FROM Genero g WHERE g.nome= '" + nome +"'");
 			return (Genero) q.getSingleResult();
 			
 		}catch(NoResultException e){
@@ -32,31 +32,29 @@ public class DAOGenero  extends DAO<Genero>{
 	///////////////////////////////////////////////////////////////////////////////////
 	//                                                TODAS AS CONSULTAS DE GENERO  //
 	
-//	public List<Genero> consultarGeneroPorNome(String prefixo) {
-//		Query q = manager.query();
-//		q.constrain(Genero.class);
-//		q.descend("nome").constrain(prefixo).contains();
-//		q.descend("nome").orderAscending();
-//		List<Genero> result = q.execute(); 
-//		return result;
-//	}
-//	
-//	public List<Genero> consultarGeneroPorFilme(String prefixo) {
-//		Query q = manager.query();
-//		q.constrain(Genero.class);
-//		q.descend("filmes").descend("titulo").constrain(prefixo).contains();
-//		q.descend("nome").orderAscending();
-//		List<Genero> result = q.execute(); 
-//		return result;
-//	}
-//	
-//	public List<Genero> consultarGeneroPorUsuario(String prefixo) {
-//		Query q = manager.query();
-//		q.constrain(Genero.class);
-//		q.descend("filmes").descend("visualizacoes").descend("usuario").descend("nome").constrain(prefixo).contains();
-//		q.descend("nome").orderAscending();
-//		List<Genero> result = q.execute(); 
-//		return result;
-//	}
+	public List<Genero> consultarGeneroPorNome(String prefixo) {
+		Query q = manager.createQuery("SELECT g FROM Genero g WHERE g.nome LIKE ?1 ORDER BY g.nome");
+		q.setParameter(1, "%"+prefixo+"%");
+		@SuppressWarnings("unchecked")
+		List<Genero> result = q.getResultList();
+		return result;
+	}
+	
+	public List<Genero> consultarGeneroPorFilme(String prefixo) {
+		Query q = manager.createQuery("SELECT g FROM Genero g, IN(g.filmes) f WHERE f.titulo LIKE ?1 ORDER BY g.nome");
+		q.setParameter(1, "%"+prefixo+"%");
+		@SuppressWarnings("unchecked")
+		List<Genero> result = q.getResultList();
+		return result;
+	}
+	
+	public List<Genero> consultarGeneroPorUsuario(String prefixo) {
+		Query q = manager.createQuery("SELECT g FROM Genero g, IN(g.filmes) f, IN(f.visualizacoes) v "
+				+ "WHERE v.usuario.nome LIKE ?1 ORDER BY g.nome");
+		q.setParameter(1, "%"+prefixo+"%");
+		@SuppressWarnings("unchecked")
+		List<Genero> result = q.getResultList();
+		return result;
+	}
 	
 }

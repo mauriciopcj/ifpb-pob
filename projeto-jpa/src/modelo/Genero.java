@@ -12,16 +12,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Index;
 import javax.persistence.ManyToMany;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "genero", indexes = { @Index( name= "index_nome_genero", columnList="nome" )})
 public class Genero{
+	
+	private String nome;
 	
 	//MAPEAMENTO
 	
 	@Id
-	private String nome; 
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private int id;
 	
 	@ManyToMany
 	private List<Filme> filmes = new ArrayList<Filme>();

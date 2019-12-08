@@ -1,90 +1,497 @@
-[EL Fine]: server: 2019-11-10 13:59:18.663--Thread(Thread[AWT-EventQueue-0,6,main])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
-[EL Config]: metadata: 2019-11-10 13:59:18.78--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class modelo.Genero] is set to [FIELD].
-[EL Config]: metadata: 2019-11-10 13:59:18.797--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the many to many mapping element [field filmes] is being defaulted to: class modelo.Filme.
-[EL Config]: metadata: 2019-11-10 13:59:18.798--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class modelo.Filme] is set to [FIELD].
-[EL Config]: metadata: 2019-11-10 13:59:18.8--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the one to many mapping element [field visualizacoes] is being defaulted to: class modelo.Visualizacao.
-[EL Config]: metadata: 2019-11-10 13:59:18.802--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the many to many mapping element [field generos] is being defaulted to: class modelo.Genero.
-[EL Config]: metadata: 2019-11-10 13:59:18.802--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class modelo.Visualizacao] is set to [FIELD].
-[EL Config]: metadata: 2019-11-10 13:59:18.803--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the many to one mapping element [field usuario] is being defaulted to: class modelo.Usuario.
-[EL Config]: metadata: 2019-11-10 13:59:18.803--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the many to one mapping element [field filme] is being defaulted to: class modelo.Filme.
-[EL Config]: metadata: 2019-11-10 13:59:18.804--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class modelo.Usuario] is set to [FIELD].
-[EL Config]: metadata: 2019-11-10 13:59:18.804--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the one to many mapping element [field visualizacoes] is being defaulted to: class modelo.Visualizacao.
-[EL Config]: metadata: 2019-11-10 13:59:18.804--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class modelo.Genero] is being defaulted to: Genero.
-[EL Config]: metadata: 2019-11-10 13:59:18.805--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The table name for entity [class modelo.Genero] is being defaulted to: GENERO.
-[EL Config]: metadata: 2019-11-10 13:59:18.813--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [nome] is being defaulted to: NOME.
-[EL Config]: metadata: 2019-11-10 13:59:18.814--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class modelo.Filme] is being defaulted to: Filme.
-[EL Config]: metadata: 2019-11-10 13:59:18.814--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The table name for entity [class modelo.Filme] is being defaulted to: FILME.
-[EL Config]: metadata: 2019-11-10 13:59:18.814--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [capa] is being defaulted to: CAPA.
-[EL Config]: metadata: 2019-11-10 13:59:18.815--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [ano] is being defaulted to: ANO.
-[EL Config]: metadata: 2019-11-10 13:59:18.816--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [titulo] is being defaulted to: TITULO.
-[EL Config]: metadata: 2019-11-10 13:59:18.816--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [classificacao] is being defaulted to: CLASSIFICACAO.
-[EL Config]: metadata: 2019-11-10 13:59:18.816--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [duracao] is being defaulted to: DURACAO.
-[EL Config]: metadata: 2019-11-10 13:59:18.816--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [id] is being defaulted to: ID.
-[EL Config]: metadata: 2019-11-10 13:59:18.816--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [descricao] is being defaulted to: DESCRICAO.
-[EL Config]: metadata: 2019-11-10 13:59:18.816--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class modelo.Visualizacao] is being defaulted to: Visualizacao.
-[EL Config]: metadata: 2019-11-10 13:59:18.816--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The table name for entity [class modelo.Visualizacao] is being defaulted to: VISUALIZACAO.
-[EL Config]: metadata: 2019-11-10 13:59:18.817--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [data] is being defaulted to: DATA.
-[EL Config]: metadata: 2019-11-10 13:59:18.817--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [id] is being defaulted to: ID.
-[EL Config]: metadata: 2019-11-10 13:59:18.817--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class modelo.Usuario] is being defaulted to: Usuario.
-[EL Config]: metadata: 2019-11-10 13:59:18.817--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The table name for entity [class modelo.Usuario] is being defaulted to: USUARIO.
-[EL Config]: metadata: 2019-11-10 13:59:18.817--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [senha] is being defaulted to: SENHA.
-[EL Config]: metadata: 2019-11-10 13:59:18.817--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [dataNasc] is being defaulted to: DATANASC.
-[EL Config]: metadata: 2019-11-10 13:59:18.817--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [nome] is being defaulted to: NOME.
-[EL Config]: metadata: 2019-11-10 13:59:18.817--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [email] is being defaulted to: EMAIL.
-[EL Config]: metadata: 2019-11-10 13:59:18.83--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The join table name for the many to many mapping [field filmes] is being defaulted to: GENERO_FILME.
-[EL Config]: metadata: 2019-11-10 13:59:18.83--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The source primary key column name for the many to many mapping [field filmes] is being defaulted to: NOME.
-[EL Config]: metadata: 2019-11-10 13:59:18.831--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The source foreign key column name for the many to many mapping [filmes] is being defaulted to: generos_NOME.
-[EL Config]: metadata: 2019-11-10 13:59:18.831--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The target primary key column name for the many to many mapping [field filmes] is being defaulted to: ID.
-[EL Config]: metadata: 2019-11-10 13:59:18.831--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The target foreign key column name for the many to many mapping [filmes] is being defaulted to: filmes_ID.
-[EL Config]: metadata: 2019-11-10 13:59:18.833--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The primary key column name for the mapping element [field visualizacoes] is being defaulted to: ID.
-[EL Config]: metadata: 2019-11-10 13:59:18.837--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The primary key column name for the mapping element [field usuario] is being defaulted to: NOME.
-[EL Config]: metadata: 2019-11-10 13:59:18.837--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The foreign key column name for the mapping element [usuario] is being defaulted to: USUARIO_NOME.
-[EL Config]: metadata: 2019-11-10 13:59:18.837--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The primary key column name for the mapping element [field filme] is being defaulted to: ID.
-[EL Config]: metadata: 2019-11-10 13:59:18.837--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--The foreign key column name for the mapping element [filme] is being defaulted to: FILME_ID.
-[EL Info]: 2019-11-10 13:59:19.259--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--EclipseLink, version: Eclipse Persistence Services - 2.7.5.v20191016-ea124dd158
-[EL Fine]: connection: 2019-11-10 13:59:19.36--Thread(Thread[AWT-EventQueue-0,6,main])--Detected database platform: org.eclipse.persistence.platform.database.PostgreSQLPlatform
-[EL Config]: connection: 2019-11-10 13:59:19.365--ServerSession(887152401)--Connection(640513190)--Thread(Thread[AWT-EventQueue-0,6,main])--connecting(DatabaseLogin(
+[EL Fine]: server: 2019-12-08 17:10:15.532--Thread(Thread[main,5,main])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+[EL Config]: metadata: 2019-12-08 17:10:15.646--ServerSession(333362446)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Genero] is set to [FIELD].
+[EL Config]: metadata: 2019-12-08 17:10:15.664--ServerSession(333362446)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field filmes] is being defaulted to: class modelo.Filme.
+[EL Config]: metadata: 2019-12-08 17:10:15.665--ServerSession(333362446)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Filme] is set to [FIELD].
+[EL Config]: metadata: 2019-12-08 17:10:15.667--ServerSession(333362446)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field visualizacoes] is being defaulted to: class modelo.Visualizacao.
+[EL Config]: metadata: 2019-12-08 17:10:15.668--ServerSession(333362446)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field generos] is being defaulted to: class modelo.Genero.
+[EL Config]: metadata: 2019-12-08 17:10:15.668--ServerSession(333362446)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Visualizacao] is set to [FIELD].
+[EL Config]: metadata: 2019-12-08 17:10:15.669--ServerSession(333362446)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field usuario] is being defaulted to: class modelo.Usuario.
+[EL Config]: metadata: 2019-12-08 17:10:15.67--ServerSession(333362446)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field filme] is being defaulted to: class modelo.Filme.
+[EL Config]: metadata: 2019-12-08 17:10:15.67--ServerSession(333362446)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Usuario] is set to [FIELD].
+[EL Config]: metadata: 2019-12-08 17:10:15.67--ServerSession(333362446)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field visualizacoes] is being defaulted to: class modelo.Visualizacao.
+[EL Config]: metadata: 2019-12-08 17:10:15.671--ServerSession(333362446)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Genero] is being defaulted to: Genero.
+[EL Config]: metadata: 2019-12-08 17:10:15.682--ServerSession(333362446)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2019-12-08 17:10:15.682--ServerSession(333362446)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2019-12-08 17:10:15.683--ServerSession(333362446)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Filme] is being defaulted to: Filme.
+[EL Config]: metadata: 2019-12-08 17:10:15.683--ServerSession(333362446)--Thread(Thread[main,5,main])--The column name for element [capa] is being defaulted to: CAPA.
+[EL Config]: metadata: 2019-12-08 17:10:15.684--ServerSession(333362446)--Thread(Thread[main,5,main])--The column name for element [ano] is being defaulted to: ANO.
+[EL Config]: metadata: 2019-12-08 17:10:15.684--ServerSession(333362446)--Thread(Thread[main,5,main])--The column name for element [titulo] is being defaulted to: TITULO.
+[EL Config]: metadata: 2019-12-08 17:10:15.685--ServerSession(333362446)--Thread(Thread[main,5,main])--The column name for element [classificacao] is being defaulted to: CLASSIFICACAO.
+[EL Config]: metadata: 2019-12-08 17:10:15.685--ServerSession(333362446)--Thread(Thread[main,5,main])--The column name for element [duracao] is being defaulted to: DURACAO.
+[EL Config]: metadata: 2019-12-08 17:10:15.685--ServerSession(333362446)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2019-12-08 17:10:15.685--ServerSession(333362446)--Thread(Thread[main,5,main])--The column name for element [descricao] is being defaulted to: DESCRICAO.
+[EL Config]: metadata: 2019-12-08 17:10:15.685--ServerSession(333362446)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Visualizacao] is being defaulted to: Visualizacao.
+[EL Config]: metadata: 2019-12-08 17:10:15.685--ServerSession(333362446)--Thread(Thread[main,5,main])--The table name for entity [class modelo.Visualizacao] is being defaulted to: VISUALIZACAO.
+[EL Config]: metadata: 2019-12-08 17:10:15.685--ServerSession(333362446)--Thread(Thread[main,5,main])--The column name for element [data] is being defaulted to: DATA.
+[EL Config]: metadata: 2019-12-08 17:10:15.685--ServerSession(333362446)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2019-12-08 17:10:15.686--ServerSession(333362446)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Usuario] is being defaulted to: Usuario.
+[EL Config]: metadata: 2019-12-08 17:10:15.686--ServerSession(333362446)--Thread(Thread[main,5,main])--The column name for element [senha] is being defaulted to: SENHA.
+[EL Config]: metadata: 2019-12-08 17:10:15.686--ServerSession(333362446)--Thread(Thread[main,5,main])--The column name for element [dataNasc] is being defaulted to: DATANASC.
+[EL Config]: metadata: 2019-12-08 17:10:15.686--ServerSession(333362446)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2019-12-08 17:10:15.686--ServerSession(333362446)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2019-12-08 17:10:15.686--ServerSession(333362446)--Thread(Thread[main,5,main])--The column name for element [email] is being defaulted to: EMAIL.
+[EL Config]: metadata: 2019-12-08 17:10:15.7--ServerSession(333362446)--Thread(Thread[main,5,main])--The join table name for the many to many mapping [field filmes] is being defaulted to: genero_filme.
+[EL Config]: metadata: 2019-12-08 17:10:15.7--ServerSession(333362446)--Thread(Thread[main,5,main])--The source primary key column name for the many to many mapping [field filmes] is being defaulted to: ID.
+[EL Config]: metadata: 2019-12-08 17:10:15.7--ServerSession(333362446)--Thread(Thread[main,5,main])--The source foreign key column name for the many to many mapping [filmes] is being defaulted to: generos_ID.
+[EL Config]: metadata: 2019-12-08 17:10:15.7--ServerSession(333362446)--Thread(Thread[main,5,main])--The target primary key column name for the many to many mapping [field filmes] is being defaulted to: ID.
+[EL Config]: metadata: 2019-12-08 17:10:15.7--ServerSession(333362446)--Thread(Thread[main,5,main])--The target foreign key column name for the many to many mapping [filmes] is being defaulted to: filmes_ID.
+[EL Config]: metadata: 2019-12-08 17:10:15.703--ServerSession(333362446)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field visualizacoes] is being defaulted to: ID.
+[EL Config]: metadata: 2019-12-08 17:10:15.707--ServerSession(333362446)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field usuario] is being defaulted to: ID.
+[EL Config]: metadata: 2019-12-08 17:10:15.707--ServerSession(333362446)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [usuario] is being defaulted to: USUARIO_ID.
+[EL Config]: metadata: 2019-12-08 17:10:15.707--ServerSession(333362446)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field filme] is being defaulted to: ID.
+[EL Config]: metadata: 2019-12-08 17:10:15.708--ServerSession(333362446)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [filme] is being defaulted to: FILME_ID.
+[EL Info]: 2019-12-08 17:10:16.136--ServerSession(333362446)--Thread(Thread[main,5,main])--EclipseLink, version: Eclipse Persistence Services - 2.7.5.v20191016-ea124dd158
+[EL Fine]: connection: 2019-12-08 17:10:16.24--Thread(Thread[main,5,main])--Detected database platform: org.eclipse.persistence.platform.database.PostgreSQLPlatform
+[EL Config]: connection: 2019-12-08 17:10:16.245--ServerSession(333362446)--Connection(1764696127)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
 	platform=>PostgreSQLPlatform
 	user name=> "postgres"
 	datasource URL=> "jdbc:postgresql://localhost:5434/filmes"
 ))
-[EL Config]: connection: 2019-11-10 13:59:19.401--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--Connected: jdbc:postgresql://localhost:5434/filmes
+[EL Config]: connection: 2019-12-08 17:10:16.278--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--Connected: jdbc:postgresql://localhost:5434/filmes
 	User: postgres
 	Database: PostgreSQL  Version: 11.3
 	Driver: PostgreSQL Native Driver  Version: PostgreSQL 9.4 JDBC4.1 (build 1206)
-[EL Info]: connection: 2019-11-10 13:59:19.428--ServerSession(887152401)--Thread(Thread[AWT-EventQueue-0,6,main])--/file:/D:/IFPB/POO/ifpb-pob/projeto-jpa/target/classes/_filmes-eclipselink login successful
-[EL Fine]: sql: 2019-11-10 13:59:28.755--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOME, DATANASC, EMAIL, SENHA FROM USUARIO WHERE (NOME = ?)
-	bind => [Mauricio]
-[EL Fine]: sql: 2019-11-10 13:59:42.491--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM FILME
-[EL Fine]: sql: 2019-11-10 13:59:42.503--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT t1.NOME FROM GENERO_FILME t0, GENERO t1 WHERE ((t0.filmes_ID = ?) AND (t1.NOME = t0.generos_NOME))
-	bind => [1]
-[EL Fine]: sql: 2019-11-10 13:59:42.507--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT t1.NOME FROM GENERO_FILME t0, GENERO t1 WHERE ((t0.filmes_ID = ?) AND (t1.NOME = t0.generos_NOME))
-	bind => [2]
-[EL Fine]: sql: 2019-11-10 13:59:42.507--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT t1.NOME FROM GENERO_FILME t0, GENERO t1 WHERE ((t0.filmes_ID = ?) AND (t1.NOME = t0.generos_NOME))
-	bind => [3]
-[EL Fine]: sql: 2019-11-10 13:59:42.508--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT t1.NOME FROM GENERO_FILME t0, GENERO t1 WHERE ((t0.filmes_ID = ?) AND (t1.NOME = t0.generos_NOME))
-	bind => [4]
-[EL Fine]: sql: 2019-11-10 13:59:42.509--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT t1.NOME FROM GENERO_FILME t0, GENERO t1 WHERE ((t0.filmes_ID = ?) AND (t1.NOME = t0.generos_NOME))
-	bind => [5]
-[EL Fine]: sql: 2019-11-10 13:59:42.51--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT t1.NOME FROM GENERO_FILME t0, GENERO t1 WHERE ((t0.filmes_ID = ?) AND (t1.NOME = t0.generos_NOME))
-	bind => [6]
-[EL Fine]: sql: 2019-11-10 13:59:42.511--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT t1.NOME FROM GENERO_FILME t0, GENERO t1 WHERE ((t0.filmes_ID = ?) AND (t1.NOME = t0.generos_NOME))
-	bind => [7]
-[EL Fine]: sql: 2019-11-10 13:59:42.512--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT t1.NOME FROM GENERO_FILME t0, GENERO t1 WHERE ((t0.filmes_ID = ?) AND (t1.NOME = t0.generos_NOME))
-	bind => [8]
-[EL Fine]: sql: 2019-11-10 13:59:42.512--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT t1.NOME FROM GENERO_FILME t0, GENERO t1 WHERE ((t0.filmes_ID = ?) AND (t1.NOME = t0.generos_NOME))
-	bind => [9]
-[EL Fine]: sql: 2019-11-10 13:59:42.52--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM FILME
-[EL Fine]: sql: 2019-11-10 13:59:55.266--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM FILME WHERE (TITULO = ?)
+[EL Info]: connection: 2019-12-08 17:10:16.306--ServerSession(333362446)--Thread(Thread[main,5,main])--/file:/D:/IFPB/POO/ifpb-pob/projeto-jpa/target/classes/_filmes-eclipselink login successful
+[EL Fine]: sql: 2019-12-08 17:10:16.335--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--CREATE TABLE usuario (ID  SERIAL NOT NULL, DATANASC DATE, EMAIL VARCHAR(255), NOME VARCHAR(255), SENHA VARCHAR(255), PRIMARY KEY (ID))
+[EL Fine]: sql: 2019-12-08 17:10:16.452--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--CREATE INDEX index_nome_usuario ON usuario (nome)
+[EL Fine]: sql: 2019-12-08 17:10:16.48--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--CREATE TABLE genero (ID  SERIAL NOT NULL, NOME VARCHAR(255), PRIMARY KEY (ID))
+[EL Fine]: sql: 2019-12-08 17:10:16.518--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--CREATE INDEX index_nome_genero ON genero (nome)
+[EL Fine]: sql: 2019-12-08 17:10:16.558--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--CREATE TABLE VISUALIZACAO (ID  SERIAL NOT NULL, DATA TIMESTAMP, FILME_ID INTEGER, USUARIO_ID INTEGER, id_filme INTEGER, PRIMARY KEY (ID))
+[EL Fine]: sql: 2019-12-08 17:10:16.597--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--CREATE TABLE filme (ID  SERIAL NOT NULL, ANO INTEGER, CAPA BYTEA, CLASSIFICACAO VARCHAR(255), DESCRICAO VARCHAR(255), DURACAO VARCHAR(255), TITULO VARCHAR(255), PRIMARY KEY (ID))
+[EL Fine]: sql: 2019-12-08 17:10:16.684--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--CREATE INDEX index_titulo_filme ON filme (titulo)
+[EL Fine]: sql: 2019-12-08 17:10:16.725--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--CREATE TABLE genero_filme (generos_ID INTEGER NOT NULL, filmes_ID INTEGER NOT NULL, PRIMARY KEY (generos_ID, filmes_ID))
+[EL Fine]: sql: 2019-12-08 17:10:16.765--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--ALTER TABLE VISUALIZACAO ADD CONSTRAINT FK_VISUALIZACAO_FILME_ID FOREIGN KEY (FILME_ID) REFERENCES filme (ID)
+[EL Fine]: sql: 2019-12-08 17:10:16.773--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--ALTER TABLE VISUALIZACAO ADD CONSTRAINT FK_VISUALIZACAO_USUARIO_ID FOREIGN KEY (USUARIO_ID) REFERENCES usuario (ID)
+[EL Fine]: sql: 2019-12-08 17:10:16.779--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--ALTER TABLE VISUALIZACAO ADD CONSTRAINT FK_VISUALIZACAO_id_filme FOREIGN KEY (id_filme) REFERENCES filme (ID)
+[EL Fine]: sql: 2019-12-08 17:10:16.784--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--ALTER TABLE genero_filme ADD CONSTRAINT FK_genero_filme_filmes_ID FOREIGN KEY (filmes_ID) REFERENCES filme (ID)
+[EL Fine]: sql: 2019-12-08 17:10:16.789--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--ALTER TABLE genero_filme ADD CONSTRAINT FK_genero_filme_generos_ID FOREIGN KEY (generos_ID) REFERENCES genero (ID)
+[EL Fine]: sql: 2019-12-08 17:10:16.951--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Avatar]
+[EL Fine]: sql: 2019-12-08 17:10:17.786--ClientSession(1622458036)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO filme (ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [2009, [B@41005828, 83/100, A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home., 162 min, Avatar]
+[EL Fine]: sql: 2019-12-08 17:10:17.79--ClientSession(1622458036)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:17.799--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Avatar]
+[EL Fine]: sql: 2019-12-08 17:10:17.803--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Action]
+[EL Fine]: sql: 2019-12-08 17:10:17.804--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Action]
+[EL Fine]: sql: 2019-12-08 17:10:17.805--ClientSession(1063737662)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero (NOME) VALUES (?)
+	bind => [Action]
+[EL Fine]: sql: 2019-12-08 17:10:17.806--ClientSession(1063737662)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:17.811--ClientSession(1957099969)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [1, 1]
+[EL Fine]: sql: 2019-12-08 17:10:17.812--ClientSession(1957099969)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Avatar]
+[EL Fine]: sql: 2019-12-08 17:10:17.815--ClientSession(1957099969)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Adventure]
+[EL Fine]: sql: 2019-12-08 17:10:17.815--ClientSession(1957099969)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Adventure]
+[EL Fine]: sql: 2019-12-08 17:10:17.816--ClientSession(1957099969)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero (NOME) VALUES (?)
+	bind => [Adventure]
+[EL Fine]: sql: 2019-12-08 17:10:17.816--ClientSession(1957099969)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:17.819--ClientSession(507819576)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [1, 2]
+[EL Fine]: sql: 2019-12-08 17:10:17.819--ClientSession(507819576)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Avatar]
+[EL Fine]: sql: 2019-12-08 17:10:17.825--ClientSession(507819576)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Fantasy]
+[EL Fine]: sql: 2019-12-08 17:10:17.825--ClientSession(507819576)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Fantasy]
+[EL Fine]: sql: 2019-12-08 17:10:17.826--ClientSession(507819576)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero (NOME) VALUES (?)
+	bind => [Fantasy]
+[EL Fine]: sql: 2019-12-08 17:10:17.826--ClientSession(507819576)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:17.829--ClientSession(1808009213)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [1, 3]
+[EL Fine]: sql: 2019-12-08 17:10:17.829--ClientSession(1808009213)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Avatar]
+[EL Fine]: sql: 2019-12-08 17:10:17.831--ClientSession(1808009213)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Sci-Fi]
+[EL Fine]: sql: 2019-12-08 17:10:17.831--ClientSession(1808009213)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Sci-Fi]
+[EL Fine]: sql: 2019-12-08 17:10:17.832--ClientSession(1808009213)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero (NOME) VALUES (?)
+	bind => [Sci-Fi]
+[EL Fine]: sql: 2019-12-08 17:10:17.833--ClientSession(1808009213)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:17.838--ClientSession(1706099897)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [1, 4]
+[EL Fine]: sql: 2019-12-08 17:10:17.839--ClientSession(1706099897)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Need for Speed]
+[EL Fine]: sql: 2019-12-08 17:10:18.008--ClientSession(1706099897)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO filme (ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [2014, [B@68df9280, 39/100, Fresh from prison, a street racer who was framed by a wealthy business associate joins a cross country race with revenge in mind. His ex-partner, learning of the plan, places a massive bounty on his head as the race begins., 132 min, Need for Speed]
+[EL Fine]: sql: 2019-12-08 17:10:18.009--ClientSession(1706099897)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:18.011--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Need for Speed]
+[EL Fine]: sql: 2019-12-08 17:10:18.012--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Action]
+[EL Fine]: sql: 2019-12-08 17:10:18.013--ClientSession(189207010)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [2, 1]
+[EL Fine]: sql: 2019-12-08 17:10:18.015--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Need for Speed]
+[EL Fine]: sql: 2019-12-08 17:10:18.016--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Crime]
+[EL Fine]: sql: 2019-12-08 17:10:18.016--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Crime]
+[EL Fine]: sql: 2019-12-08 17:10:18.017--ClientSession(2053628870)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero (NOME) VALUES (?)
+	bind => [Crime]
+[EL Fine]: sql: 2019-12-08 17:10:18.017--ClientSession(2053628870)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:18.019--ClientSession(1611832218)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [2, 5]
+[EL Fine]: sql: 2019-12-08 17:10:18.02--ClientSession(1611832218)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Need for Speed]
+[EL Fine]: sql: 2019-12-08 17:10:18.021--ClientSession(1611832218)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Thriller]
+[EL Fine]: sql: 2019-12-08 17:10:18.021--ClientSession(1611832218)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Thriller]
+[EL Fine]: sql: 2019-12-08 17:10:18.022--ClientSession(1611832218)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero (NOME) VALUES (?)
+	bind => [Thriller]
+[EL Fine]: sql: 2019-12-08 17:10:18.022--ClientSession(1611832218)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:18.025--ClientSession(1097619701)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [2, 6]
+[EL Fine]: sql: 2019-12-08 17:10:18.025--ClientSession(1097619701)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [The Avengers]
+[EL Fine]: sql: 2019-12-08 17:10:18.216--ClientSession(1097619701)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO filme (ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [2012, [B@1c93f6e1, 69/100, Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity., 143 min, The Avengers]
+[EL Fine]: sql: 2019-12-08 17:10:18.218--ClientSession(1097619701)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:18.22--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [The Avengers]
+[EL Fine]: sql: 2019-12-08 17:10:18.22--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Action]
+[EL Fine]: sql: 2019-12-08 17:10:18.222--ClientSession(171809144)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [3, 1]
+[EL Fine]: sql: 2019-12-08 17:10:18.223--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [The Avengers]
+[EL Fine]: sql: 2019-12-08 17:10:18.223--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Adventure]
+[EL Fine]: sql: 2019-12-08 17:10:18.224--ClientSession(1724457619)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [3, 2]
+[EL Fine]: sql: 2019-12-08 17:10:18.225--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [The Avengers]
+[EL Fine]: sql: 2019-12-08 17:10:18.226--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Sci-Fi]
+[EL Fine]: sql: 2019-12-08 17:10:18.227--ClientSession(1997702454)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [3, 4]
+[EL Fine]: sql: 2019-12-08 17:10:18.229--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Doctor Strange]
+[EL Fine]: sql: 2019-12-08 17:10:18.407--ClientSession(738677855)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO filme (ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [2016, [B@602e0143, 72/100, While on a journey of physical and spiritual healing, a brilliant neurosurgeon is drawn into the world of the mystic arts., 115 min, Doctor Strange]
+[EL Fine]: sql: 2019-12-08 17:10:18.408--ClientSession(738677855)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:18.41--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Doctor Strange]
+[EL Fine]: sql: 2019-12-08 17:10:18.411--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Action]
+[EL Fine]: sql: 2019-12-08 17:10:18.412--ClientSession(179779934)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [4, 1]
+[EL Fine]: sql: 2019-12-08 17:10:18.414--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Doctor Strange]
+[EL Fine]: sql: 2019-12-08 17:10:18.414--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Adventure]
+[EL Fine]: sql: 2019-12-08 17:10:18.415--ClientSession(729218894)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [4, 2]
+[EL Fine]: sql: 2019-12-08 17:10:18.416--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Doctor Strange]
+[EL Fine]: sql: 2019-12-08 17:10:18.417--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Fantasy]
+[EL Fine]: sql: 2019-12-08 17:10:18.418--ClientSession(1127338375)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [4, 3]
+[EL Fine]: sql: 2019-12-08 17:10:18.419--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Doctor Strange]
+[EL Fine]: sql: 2019-12-08 17:10:18.42--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Sci-Fi]
+[EL Fine]: sql: 2019-12-08 17:10:18.421--ClientSession(434437292)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [4, 4]
+[EL Fine]: sql: 2019-12-08 17:10:18.423--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Joker]
+[EL Fine]: sql: 2019-12-08 17:10:18.624--ClientSession(192694377)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO filme (ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [2019, [B@7e4204e2, 59/100, In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego, 122 min, Joker]
+[EL Fine]: sql: 2019-12-08 17:10:18.625--ClientSession(192694377)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:18.809--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Joker]
+[EL Fine]: sql: 2019-12-08 17:10:18.81--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Crime]
+[EL Fine]: sql: 2019-12-08 17:10:18.811--ClientSession(836427078)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [5, 5]
+[EL Fine]: sql: 2019-12-08 17:10:18.812--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Joker]
+[EL Fine]: sql: 2019-12-08 17:10:18.814--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Drama]
+[EL Fine]: sql: 2019-12-08 17:10:18.814--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Drama]
+[EL Fine]: sql: 2019-12-08 17:10:18.815--ClientSession(1808432653)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero (NOME) VALUES (?)
+	bind => [Drama]
+[EL Fine]: sql: 2019-12-08 17:10:18.815--ClientSession(1808432653)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:18.816--ClientSession(1097897234)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [5, 7]
+[EL Fine]: sql: 2019-12-08 17:10:18.817--ClientSession(1097897234)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Joker]
+[EL Fine]: sql: 2019-12-08 17:10:18.817--ClientSession(1097897234)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Thriller]
+[EL Fine]: sql: 2019-12-08 17:10:18.818--ClientSession(1097897234)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [5, 6]
+[EL Fine]: sql: 2019-12-08 17:10:18.82--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
 	bind => [Captain Marvel]
-[EL Fine]: sql: 2019-11-10 13:59:55.279--ClientSession(1196327023)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--INSERT INTO VISUALIZACAO (DATA, FILME_ID, USUARIO_NOME) VALUES (?, ?, ?)
-	bind => [2019-11-10T13:59:55.276, 6, Mauricio]
-[EL Fine]: sql: 2019-11-10 13:59:55.281--ClientSession(1196327023)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--select lastval()
-[EL Fine]: sql: 2019-11-10 13:59:55.286--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATA, FILME_ID, USUARIO_NOME FROM VISUALIZACAO WHERE (id_filme = ?)
-	bind => [6]
-[EL Fine]: sql: 2019-11-10 13:59:55.287--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOME, DATANASC, EMAIL, SENHA FROM USUARIO WHERE (NOME = ?)
-	bind => [Rafael]
-[EL Fine]: sql: 2019-11-10 13:59:55.289--ServerSession(887152401)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATA, FILME_ID, USUARIO_NOME FROM VISUALIZACAO WHERE (USUARIO_NOME = ?)
+[EL Fine]: sql: 2019-12-08 17:10:18.993--ClientSession(1398241764)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO filme (ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [2019, [B@53de625d, 64/100, Carol Danvers becomes one of the universe's most powerful heroes when Earth is caught in the middle of a galactic war between two alien races., 123 min, Captain Marvel]
+[EL Fine]: sql: 2019-12-08 17:10:18.994--ClientSession(1398241764)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:18.996--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Captain Marvel]
+[EL Fine]: sql: 2019-12-08 17:10:18.997--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Action]
+[EL Fine]: sql: 2019-12-08 17:10:18.999--ClientSession(1681303515)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [6, 1]
+[EL Fine]: sql: 2019-12-08 17:10:19.0--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Captain Marvel]
+[EL Fine]: sql: 2019-12-08 17:10:19.001--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Adventure]
+[EL Fine]: sql: 2019-12-08 17:10:19.003--ClientSession(680988889)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [6, 2]
+[EL Fine]: sql: 2019-12-08 17:10:19.004--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Captain Marvel]
+[EL Fine]: sql: 2019-12-08 17:10:19.005--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Sci-Fi]
+[EL Fine]: sql: 2019-12-08 17:10:19.007--ClientSession(1874028013)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [6, 4]
+[EL Fine]: sql: 2019-12-08 17:10:19.009--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Alita]
+[EL Fine]: sql: 2019-12-08 17:10:19.171--ClientSession(1830745997)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO filme (ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [2019, [B@4b14918a, 53/100, A deactivated cyborg is revived, but cannot remember anything of her past life and goes on a quest to find out who she is., 122 min, Alita]
+[EL Fine]: sql: 2019-12-08 17:10:19.172--ClientSession(1830745997)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:19.174--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Alita]
+[EL Fine]: sql: 2019-12-08 17:10:19.175--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Action]
+[EL Fine]: sql: 2019-12-08 17:10:19.176--ClientSession(236567414)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [7, 1]
+[EL Fine]: sql: 2019-12-08 17:10:19.177--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Alita]
+[EL Fine]: sql: 2019-12-08 17:10:19.178--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Adventure]
+[EL Fine]: sql: 2019-12-08 17:10:19.179--ClientSession(1789110533)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [7, 2]
+[EL Fine]: sql: 2019-12-08 17:10:19.18--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Alita]
+[EL Fine]: sql: 2019-12-08 17:10:19.181--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Sci-Fi]
+[EL Fine]: sql: 2019-12-08 17:10:19.182--ClientSession(1140338296)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [7, 4]
+[EL Fine]: sql: 2019-12-08 17:10:19.183--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Alita]
+[EL Fine]: sql: 2019-12-08 17:10:19.184--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Thriller]
+[EL Fine]: sql: 2019-12-08 17:10:19.185--ClientSession(23880693)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [7, 6]
+[EL Fine]: sql: 2019-12-08 17:10:19.187--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Logan]
+[EL Fine]: sql: 2019-12-08 17:10:19.362--ClientSession(333034015)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO filme (ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [2017, [B@12c7a01b, 77/100, In a future where mutants are nearly extinct, an elderly and weary Logan leads a quiet life. But when Laura, a mutant child pursued by scientists, comes to him for help, he must get her to safety., 137 min, Logan]
+[EL Fine]: sql: 2019-12-08 17:10:19.363--ClientSession(333034015)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:19.364--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Logan]
+[EL Fine]: sql: 2019-12-08 17:10:19.365--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Action]
+[EL Fine]: sql: 2019-12-08 17:10:19.367--ClientSession(154988899)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [8, 1]
+[EL Fine]: sql: 2019-12-08 17:10:19.368--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Logan]
+[EL Fine]: sql: 2019-12-08 17:10:19.369--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Drama]
+[EL Fine]: sql: 2019-12-08 17:10:19.369--ClientSession(1026483832)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [8, 7]
+[EL Fine]: sql: 2019-12-08 17:10:19.371--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Logan]
+[EL Fine]: sql: 2019-12-08 17:10:19.371--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Sci-Fi]
+[EL Fine]: sql: 2019-12-08 17:10:19.372--ClientSession(1940055334)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [8, 4]
+[EL Fine]: sql: 2019-12-08 17:10:19.373--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Logan]
+[EL Fine]: sql: 2019-12-08 17:10:19.374--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Thriller]
+[EL Fine]: sql: 2019-12-08 17:10:19.375--ClientSession(1569435561)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [8, 6]
+[EL Fine]: sql: 2019-12-08 17:10:19.377--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Aquaman]
+[EL Fine]: sql: 2019-12-08 17:10:19.553--ClientSession(490391704)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO filme (ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [2018, [B@604f2bd2, 55/100, Arthur Curry, the human-born heir to the underwater kingdom of Atlantis, goes on a quest to prevent a war between the worlds of ocean and land., 143 min, Aquaman]
+[EL Fine]: sql: 2019-12-08 17:10:19.555--ClientSession(490391704)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:19.557--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Aquaman]
+[EL Fine]: sql: 2019-12-08 17:10:19.558--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Action]
+[EL Fine]: sql: 2019-12-08 17:10:19.559--ClientSession(527211736)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [9, 1]
+[EL Fine]: sql: 2019-12-08 17:10:19.561--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Aquaman]
+[EL Fine]: sql: 2019-12-08 17:10:19.561--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Adventure]
+[EL Fine]: sql: 2019-12-08 17:10:19.563--ClientSession(1520267010)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [9, 2]
+[EL Fine]: sql: 2019-12-08 17:10:19.564--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Aquaman]
+[EL Fine]: sql: 2019-12-08 17:10:19.564--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Fantasy]
+[EL Fine]: sql: 2019-12-08 17:10:19.566--ClientSession(902860396)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [9, 3]
+[EL Fine]: sql: 2019-12-08 17:10:19.567--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Aquaman]
+[EL Fine]: sql: 2019-12-08 17:10:19.567--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Sci-Fi]
+[EL Fine]: sql: 2019-12-08 17:10:19.569--ClientSession(1368862151)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [9, 4]
+[EL Fine]: sql: 2019-12-08 17:10:19.572--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, DATANASC, EMAIL, NOME, SENHA FROM usuario WHERE (NOME = ?)
 	bind => [Mauricio]
-[EL Fine]: sql: 2019-11-10 13:59:55.294--ClientSession(1229426948)--Connection(1075405198)--Thread(Thread[AWT-EventQueue-0,6,main])--UPDATE VISUALIZACAO SET id_filme = ? WHERE (ID = ?)
-	bind => [6, 12]
+[EL Fine]: sql: 2019-12-08 17:10:19.575--ClientSession(1694784135)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO usuario (DATANASC, EMAIL, NOME, SENHA) VALUES (?, ?, ?, ?)
+	bind => [1988-09-22, mauricio@mauricio, Mauricio, 8D969EEF6ECAD3C29A3A629280E686CF0C3F5D5A86AFF3CA12020C923ADC6C92]
+[EL Fine]: sql: 2019-12-08 17:10:19.577--ClientSession(1694784135)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:19.586--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, DATANASC, EMAIL, NOME, SENHA FROM usuario WHERE (NOME = ?)
+	bind => [Romero]
+[EL Fine]: sql: 2019-12-08 17:10:19.588--ClientSession(487792155)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO usuario (DATANASC, EMAIL, NOME, SENHA) VALUES (?, ?, ?, ?)
+	bind => [2000-02-11, romero@romero, Romero, A665A45920422F9D417E4867EFDC4FB8A04A1F3FFF1FA07E998E86F7F7A27AE3]
+[EL Fine]: sql: 2019-12-08 17:10:19.588--ClientSession(487792155)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:19.591--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, DATANASC, EMAIL, NOME, SENHA FROM usuario WHERE (NOME = ?)
+	bind => [Rafael]
+[EL Fine]: sql: 2019-12-08 17:10:19.592--ClientSession(314411620)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO usuario (DATANASC, EMAIL, NOME, SENHA) VALUES (?, ?, ?, ?)
+	bind => [1999-05-30, rafael@rafael, Rafael, B3A8E0E1F9AB1BFE3A36F231F676F78BB30A519D2B21E6C530C0EEE8EBB4A5D0]
+[EL Fine]: sql: 2019-12-08 17:10:19.593--ClientSession(314411620)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:19.595--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Ação]
+[EL Fine]: sql: 2019-12-08 17:10:19.595--ClientSession(324112183)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero (NOME) VALUES (?)
+	bind => [Ação]
+[EL Fine]: sql: 2019-12-08 17:10:19.595--ClientSession(324112183)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:19.597--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Aventura]
+[EL Fine]: sql: 2019-12-08 17:10:19.598--ClientSession(793293778)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero (NOME) VALUES (?)
+	bind => [Aventura]
+[EL Fine]: sql: 2019-12-08 17:10:19.598--ClientSession(793293778)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:19.599--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Fantasia]
+[EL Fine]: sql: 2019-12-08 17:10:19.6--ClientSession(489411441)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero (NOME) VALUES (?)
+	bind => [Fantasia]
+[EL Fine]: sql: 2019-12-08 17:10:19.6--ClientSession(489411441)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:19.601--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Terror]
+[EL Fine]: sql: 2019-12-08 17:10:19.601--ClientSession(1800649922)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero (NOME) VALUES (?)
+	bind => [Terror]
+[EL Fine]: sql: 2019-12-08 17:10:19.601--ClientSession(1800649922)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:19.602--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Avatar]
+[EL Fine]: sql: 2019-12-08 17:10:19.603--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Ação]
+[EL Fine]: sql: 2019-12-08 17:10:19.604--ClientSession(2121995675)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [1, 8]
+[EL Fine]: sql: 2019-12-08 17:10:19.606--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Avatar]
+[EL Fine]: sql: 2019-12-08 17:10:19.606--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Aventura]
+[EL Fine]: sql: 2019-12-08 17:10:19.606--ClientSession(913065088)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [1, 9]
+[EL Fine]: sql: 2019-12-08 17:10:19.608--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Avatar]
+[EL Fine]: sql: 2019-12-08 17:10:19.608--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Fantasia]
+[EL Fine]: sql: 2019-12-08 17:10:19.608--ClientSession(1640899500)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [1, 10]
+[EL Fine]: sql: 2019-12-08 17:10:19.609--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Avatar]
+[EL Fine]: sql: 2019-12-08 17:10:19.61--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM genero WHERE (NOME = ?)
+	bind => [Terror]
+[EL Fine]: sql: 2019-12-08 17:10:19.611--ClientSession(1930903395)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO genero_filme (filmes_ID, generos_ID) VALUES (?, ?)
+	bind => [1, 11]
+[EL Fine]: sql: 2019-12-08 17:10:19.612--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Avatar]
+[EL Fine]: sql: 2019-12-08 17:10:19.612--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, DATANASC, EMAIL, NOME, SENHA FROM usuario WHERE (NOME = ?)
+	bind => [Mauricio]
+[EL Fine]: sql: 2019-12-08 17:10:19.619--ClientSession(1420196421)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO VISUALIZACAO (DATA, FILME_ID, USUARIO_ID) VALUES (?, ?, ?)
+	bind => [2019-12-08T17:10:19.618, 1, 1]
+[EL Fine]: sql: 2019-12-08 17:10:19.621--ClientSession(1420196421)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:19.624--ClientSession(109069556)--Connection(1223867739)--Thread(Thread[main,5,main])--UPDATE VISUALIZACAO SET id_filme = ? WHERE (ID = ?)
+	bind => [1, 1]
+[EL Fine]: sql: 2019-12-08 17:10:19.626--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Aquaman]
+[EL Fine]: sql: 2019-12-08 17:10:19.627--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, DATANASC, EMAIL, NOME, SENHA FROM usuario WHERE (NOME = ?)
+	bind => [Mauricio]
+[EL Fine]: sql: 2019-12-08 17:10:19.628--ClientSession(2015301874)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO VISUALIZACAO (DATA, FILME_ID, USUARIO_ID) VALUES (?, ?, ?)
+	bind => [2019-12-08T17:10:19.628, 9, 1]
+[EL Fine]: sql: 2019-12-08 17:10:19.629--ClientSession(2015301874)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:19.631--ClientSession(472991420)--Connection(1223867739)--Thread(Thread[main,5,main])--UPDATE VISUALIZACAO SET id_filme = ? WHERE (ID = ?)
+	bind => [9, 2]
+[EL Fine]: sql: 2019-12-08 17:10:19.632--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Doctor Strange]
+[EL Fine]: sql: 2019-12-08 17:10:19.633--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, DATANASC, EMAIL, NOME, SENHA FROM usuario WHERE (NOME = ?)
+	bind => [Mauricio]
+[EL Fine]: sql: 2019-12-08 17:10:19.634--ClientSession(785306763)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO VISUALIZACAO (DATA, FILME_ID, USUARIO_ID) VALUES (?, ?, ?)
+	bind => [2019-12-08T17:10:19.634, 4, 1]
+[EL Fine]: sql: 2019-12-08 17:10:19.635--ClientSession(785306763)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:19.638--ClientSession(1129433283)--Connection(1223867739)--Thread(Thread[main,5,main])--UPDATE VISUALIZACAO SET id_filme = ? WHERE (ID = ?)
+	bind => [4, 3]
+[EL Fine]: sql: 2019-12-08 17:10:19.639--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Avatar]
+[EL Fine]: sql: 2019-12-08 17:10:19.64--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, DATANASC, EMAIL, NOME, SENHA FROM usuario WHERE (NOME = ?)
+	bind => [Mauricio]
+[EL Fine]: sql: 2019-12-08 17:10:19.641--ClientSession(1770070706)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO VISUALIZACAO (DATA, FILME_ID, USUARIO_ID) VALUES (?, ?, ?)
+	bind => [2019-12-08T17:10:19.641, 1, 1]
+[EL Fine]: sql: 2019-12-08 17:10:19.642--ClientSession(1770070706)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:19.645--ClientSession(1751403001)--Connection(1223867739)--Thread(Thread[main,5,main])--UPDATE VISUALIZACAO SET id_filme = ? WHERE (ID = ?)
+	bind => [1, 4]
+[EL Fine]: sql: 2019-12-08 17:10:19.646--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Joker]
+[EL Fine]: sql: 2019-12-08 17:10:19.647--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, DATANASC, EMAIL, NOME, SENHA FROM usuario WHERE (NOME = ?)
+	bind => [Romero]
+[EL Fine]: sql: 2019-12-08 17:10:19.648--ClientSession(482307698)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO VISUALIZACAO (DATA, FILME_ID, USUARIO_ID) VALUES (?, ?, ?)
+	bind => [2019-12-08T17:10:19.648, 5, 2]
+[EL Fine]: sql: 2019-12-08 17:10:19.649--ClientSession(482307698)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:19.651--ClientSession(1860886124)--Connection(1223867739)--Thread(Thread[main,5,main])--UPDATE VISUALIZACAO SET id_filme = ? WHERE (ID = ?)
+	bind => [5, 5]
+[EL Fine]: sql: 2019-12-08 17:10:19.653--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Logan]
+[EL Fine]: sql: 2019-12-08 17:10:19.653--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, DATANASC, EMAIL, NOME, SENHA FROM usuario WHERE (NOME = ?)
+	bind => [Romero]
+[EL Fine]: sql: 2019-12-08 17:10:19.654--ClientSession(1930837320)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO VISUALIZACAO (DATA, FILME_ID, USUARIO_ID) VALUES (?, ?, ?)
+	bind => [2019-12-08T17:10:19.654, 8, 2]
+[EL Fine]: sql: 2019-12-08 17:10:19.654--ClientSession(1930837320)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:19.656--ClientSession(538667887)--Connection(1223867739)--Thread(Thread[main,5,main])--UPDATE VISUALIZACAO SET id_filme = ? WHERE (ID = ?)
+	bind => [8, 6]
+[EL Fine]: sql: 2019-12-08 17:10:19.658--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [The Avengers]
+[EL Fine]: sql: 2019-12-08 17:10:19.659--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, DATANASC, EMAIL, NOME, SENHA FROM usuario WHERE (NOME = ?)
+	bind => [Rafael]
+[EL Fine]: sql: 2019-12-08 17:10:19.659--ClientSession(685934)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO VISUALIZACAO (DATA, FILME_ID, USUARIO_ID) VALUES (?, ?, ?)
+	bind => [2019-12-08T17:10:19.659, 3, 3]
+[EL Fine]: sql: 2019-12-08 17:10:19.66--ClientSession(685934)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:19.662--ClientSession(733461760)--Connection(1223867739)--Thread(Thread[main,5,main])--UPDATE VISUALIZACAO SET id_filme = ? WHERE (ID = ?)
+	bind => [3, 7]
+[EL Fine]: sql: 2019-12-08 17:10:19.663--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Need for Speed]
+[EL Fine]: sql: 2019-12-08 17:10:19.664--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, DATANASC, EMAIL, NOME, SENHA FROM usuario WHERE (NOME = ?)
+	bind => [Rafael]
+[EL Fine]: sql: 2019-12-08 17:10:19.664--ClientSession(1624351535)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO VISUALIZACAO (DATA, FILME_ID, USUARIO_ID) VALUES (?, ?, ?)
+	bind => [2019-12-08T17:10:19.664, 2, 3]
+[EL Fine]: sql: 2019-12-08 17:10:19.664--ClientSession(1624351535)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:19.666--ClientSession(1979055448)--Connection(1223867739)--Thread(Thread[main,5,main])--UPDATE VISUALIZACAO SET id_filme = ? WHERE (ID = ?)
+	bind => [2, 8]
+[EL Fine]: sql: 2019-12-08 17:10:19.668--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Doctor Strange]
+[EL Fine]: sql: 2019-12-08 17:10:19.668--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, DATANASC, EMAIL, NOME, SENHA FROM usuario WHERE (NOME = ?)
+	bind => [Rafael]
+[EL Fine]: sql: 2019-12-08 17:10:19.669--ClientSession(231725600)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO VISUALIZACAO (DATA, FILME_ID, USUARIO_ID) VALUES (?, ?, ?)
+	bind => [2019-12-08T17:10:19.669, 4, 3]
+[EL Fine]: sql: 2019-12-08 17:10:19.67--ClientSession(231725600)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:19.672--ClientSession(331596257)--Connection(1223867739)--Thread(Thread[main,5,main])--UPDATE VISUALIZACAO SET id_filme = ? WHERE (ID = ?)
+	bind => [4, 9]
+[EL Fine]: sql: 2019-12-08 17:10:19.673--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Captain Marvel]
+[EL Fine]: sql: 2019-12-08 17:10:19.674--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, DATANASC, EMAIL, NOME, SENHA FROM usuario WHERE (NOME = ?)
+	bind => [Rafael]
+[EL Fine]: sql: 2019-12-08 17:10:19.675--ClientSession(500230084)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO VISUALIZACAO (DATA, FILME_ID, USUARIO_ID) VALUES (?, ?, ?)
+	bind => [2019-12-08T17:10:19.674, 6, 3]
+[EL Fine]: sql: 2019-12-08 17:10:19.675--ClientSession(500230084)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:19.677--ClientSession(979550238)--Connection(1223867739)--Thread(Thread[main,5,main])--UPDATE VISUALIZACAO SET id_filme = ? WHERE (ID = ?)
+	bind => [6, 10]
+[EL Fine]: sql: 2019-12-08 17:10:19.679--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, ANO, CAPA, CLASSIFICACAO, DESCRICAO, DURACAO, TITULO FROM filme WHERE (TITULO = ?)
+	bind => [Alita]
+[EL Fine]: sql: 2019-12-08 17:10:19.679--ServerSession(333362446)--Connection(1223867739)--Thread(Thread[main,5,main])--SELECT ID, DATANASC, EMAIL, NOME, SENHA FROM usuario WHERE (NOME = ?)
+	bind => [Rafael]
+[EL Fine]: sql: 2019-12-08 17:10:19.68--ClientSession(203819996)--Connection(1223867739)--Thread(Thread[main,5,main])--INSERT INTO VISUALIZACAO (DATA, FILME_ID, USUARIO_ID) VALUES (?, ?, ?)
+	bind => [2019-12-08T17:10:19.680, 7, 3]
+[EL Fine]: sql: 2019-12-08 17:10:19.68--ClientSession(203819996)--Connection(1223867739)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-12-08 17:10:19.682--ClientSession(338887787)--Connection(1223867739)--Thread(Thread[main,5,main])--UPDATE VISUALIZACAO SET id_filme = ? WHERE (ID = ?)
+	bind => [7, 11]

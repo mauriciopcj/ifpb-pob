@@ -417,7 +417,7 @@ public class Fachada {
 	///////////////////////////////////////////////////////////////////////////////////
 	//                                                                   CONSULTAS  //
 	
-	/*
+
 	public static String consultarFilmePorTitulo(String n) {			// FILME > TITULO
 		List<Filme> result = daofilme.consultarFilmePorTitulo(n);
 		String texto = "\nConsultar filmes em que o titulo tenha [ " + n + " ]\n";
@@ -520,7 +520,6 @@ public class Fachada {
 		}
 		return texto;
 	}
-	*/
 	
 	///////////////////////////////////////////////////////////////////////////////////
 	//                                                                       UTILS  //

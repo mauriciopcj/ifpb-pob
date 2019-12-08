@@ -9,12 +9,19 @@
 package modelo;
 
 import java.awt.image.BufferedImage;
+import java.io.BufferedWriter;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.PrintWriter;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.imageio.ImageIO;
@@ -23,13 +30,17 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Index;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.Lob;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
+import javax.persistence.PostPersist;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "filme", indexes = { @Index( name= "index_titulo_filme", columnList="titulo" )})
 public class Filme {
 	
 	private String titulo;
@@ -53,8 +64,8 @@ public class Filme {
 			)
 	@JoinTable(
 			name = "filme_genero",
-			joinColumns = @JoinColumn(name = "filme", referencedColumnName = "id"),
-			inverseJoinColumns = @JoinColumn(name = "genero", referencedColumnName = "nome")
+			joinColumns = @JoinColumn(name = "id_filme", referencedColumnName = "id"),
+			inverseJoinColumns = @JoinColumn(name = "id_genero", referencedColumnName = "nome")
 			)
 	private List<Genero> generos = new ArrayList<Genero>();
 	
@@ -76,6 +87,29 @@ public class Filme {
 		this.classificacao = classificacao;
 		this.descricao = descricao;
 		setCapa(bf);
+	}
+	
+	// LOG DE CRIACAO DE OBJETOS DO TIPO FILME
+	
+	@PostPersist
+	public void criandoFilme() {
+		String path = "log_filmes.txt";
+		Date dataAtual = new Date();
+        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        String dataFormatada = dateFormat.format(dataAtual);
+        
+		try {
+			FileWriter fw = new FileWriter(path, true);
+			BufferedWriter conexao = new BufferedWriter(fw);
+			String texto = "Filme = " + titulo + ";" + dataFormatada;
+			conexao.write(texto);
+			conexao.newLine();
+			conexao.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
 	
 	//  ADD  //  REMOVE  //  FIND  //

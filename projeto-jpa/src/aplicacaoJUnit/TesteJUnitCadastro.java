@@ -27,7 +27,6 @@ public class TesteJUnitCadastro {
 	
 	@BeforeClass
 	public static void inicializarRecursosExternos() {
-		new File("banco.db4o").delete();
 		Fachada.inicializar();
 	}
 
