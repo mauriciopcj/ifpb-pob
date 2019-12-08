@@ -34,20 +34,12 @@ import javax.persistence.JoinTable;
 import javax.persistence.Lob;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
-<<<<<<< HEAD
 import javax.persistence.PostPersist;
 import javax.persistence.Table;
 import javax.persistence.Version;
 
 @Entity
 @Table(name = "filme", indexes = { @Index( name= "index_titulo_filme", columnList="titulo" )})
-=======
-import javax.persistence.Table;
-
-
-@Entity
-@Table( indexes = @Index( columnList = "titulo" ))
->>>>>>> 66b93d0b292d7f52f832756eac007dfd98a681d5
 public class Filme {
 
 	private String titulo;
@@ -245,9 +237,9 @@ public class Filme {
 	public String toString() {
 		return "-----------------------------------" + 
 				"\nTitulo        | " + this.titulo + 
-				"\nClassificação | " + this.classificacao + 
+				"\nClassificaï¿½ï¿½o | " + this.classificacao + 
 				"\nAno           | " + this.ano + 
-				"\nDuração       | " + this.duracao + 
+				"\nDuraï¿½ï¿½o       | " + this.duracao + 
 				"\nGeneros       | " + (""+this.generos).replace("[","").replace("]","") + 
 				"\n-----------------------------------";
 	}

@@ -20,11 +20,7 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
-<<<<<<< HEAD
 @Table(name = "genero", indexes = { @Index( name= "index_nome_genero", columnList="nome" )})
-=======
-@Table( indexes = @Index( columnList = "nome" ))
->>>>>>> 66b93d0b292d7f52f832756eac007dfd98a681d5
 public class Genero{
 	
 	private String nome;
