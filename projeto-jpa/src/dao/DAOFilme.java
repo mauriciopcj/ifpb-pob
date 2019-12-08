@@ -29,6 +29,7 @@ public class DAOFilme  extends DAO<Filme> {
 	///////////////////////////////////////////////////////////////////////////////////
 	//                                                 TODAS AS CONSULTAS DE FILME  //
 
+<<<<<<< HEAD
 	public List<Filme> consultarFilmePorTitulo(String prefixo) {
 		Query q = manager.createQuery("SELECT f FROM Filme f WHERE f.titulo LIKE ?1");
 		q.setParameter(1, "%"+prefixo+"%");
@@ -44,5 +45,22 @@ public class DAOFilme  extends DAO<Filme> {
 		List<Filme> result = q.getResultList();
 		return result;
 	}
+=======
+//	public List<Filme> consultarFilmePorTitulo(String prefixo) {
+//		Query q = manager.createQuery();
+//		q.constrain(Filme.class);
+//		q.descend("titulo").constrain(prefixo).contains();
+//		List<Filme> result = q.execute(); 
+//		return result;
+//	}
+//	
+//	public List<Filme> consultarFilmePorGenero(String prefixo) {
+//		Query q = manager.query();
+//		q.constrain(Filme.class);
+//		q.descend("generos").descend("nome").constrain(prefixo).contains();
+//		List<Filme> result = q.execute(); 
+//		return result;
+//	}
+>>>>>>> 66b93d0b292d7f52f832756eac007dfd98a681d5
 	
 }

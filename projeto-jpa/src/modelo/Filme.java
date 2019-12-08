@@ -34,14 +34,22 @@ import javax.persistence.JoinTable;
 import javax.persistence.Lob;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
+<<<<<<< HEAD
 import javax.persistence.PostPersist;
 import javax.persistence.Table;
 import javax.persistence.Version;
 
 @Entity
 @Table(name = "filme", indexes = { @Index( name= "index_titulo_filme", columnList="titulo" )})
+=======
+import javax.persistence.Table;
+
+
+@Entity
+@Table( indexes = @Index( columnList = "titulo" ))
+>>>>>>> 66b93d0b292d7f52f832756eac007dfd98a681d5
 public class Filme {
-	
+
 	private String titulo;
 	private int ano;
 	private String duracao;
@@ -71,10 +79,7 @@ public class Filme {
 			)
 	private List<Genero> generos = new ArrayList<Genero>();
 	
-	@OneToMany
-	@JoinColumn(
-			name = "id_filme"
-			)
+	@OneToMany(mappedBy="filme")
 	private List<Visualizacao> visualizacoes = new ArrayList<Visualizacao>();
 	
 	// CONSTRUTOR

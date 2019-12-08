@@ -16,16 +16,23 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+<<<<<<< HEAD
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+=======
+>>>>>>> 66b93d0b292d7f52f832756eac007dfd98a681d5
 import javax.persistence.Id;
 import javax.persistence.Index;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
+<<<<<<< HEAD
 @Table(name = "usuario", indexes = { @Index( name= "index_nome_usuario", columnList="nome" )})
+=======
+@Table( indexes = @Index( columnList = "nome" ))
+>>>>>>> 66b93d0b292d7f52f832756eac007dfd98a681d5
 public class Usuario {
 	
 	private String nome;
@@ -41,10 +48,7 @@ public class Usuario {
 	@Column(columnDefinition = "DATE")
 	private LocalDate dataNasc;
 	
-	@OneToMany(
-			mappedBy = "usuario",
-			fetch = FetchType.LAZY
-			)
+	@OneToMany(mappedBy="usuario")
 	private List<Visualizacao> visualizacoes = new ArrayList<Visualizacao>();
 
 	// CONSTRUCTOR

@@ -42,7 +42,11 @@ public abstract class DAO<T> implements DAOInterface<T> {
 			//			properties.put(PersistenceUnitProperties.SCHEMA_GENERATION_SCRIPTS_ACTION, "create");						
 			//			properties.put(PersistenceUnitProperties.SCHEMA_GENERATION_SCRIPTS_ACTION, "create");
 			factory = Persistence.createEntityManagerFactory("filmes-eclipselink", properties);
+<<<<<<< HEAD
 //			factory = Persistence.createEntityManagerFactory("filmes-hibernate", properties);
+=======
+			//factory = Persistence.createEntityManagerFactory("filmes-hibernate", properties);
+>>>>>>> 66b93d0b292d7f52f832756eac007dfd98a681d5
 			manager = factory.createEntityManager();
 		}
 	}
