@@ -1,80 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
-	
-	<!--  HIBERNATE -->
-	<persistence-unit name="filmes-hibernate" transaction-type="RESOURCE_LOCAL">
-		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		<exclude-unlisted-classes>false</exclude-unlisted-classes>
-		<properties>
-			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
-		    <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/filmes" />
-		    <property name="javax.persistence.jdbc.user" value="postgres" />
-		    <property name="javax.persistence.jdbc.password" value="ifpb" />
- 		    
-		    <property name="hibernate.dialect"   		value="org.hibernate.dialect.PostgreSQLDialect" />
-   			<property name="hibernate.hbm2ddl.auto" 	value="update" />  
-   			<property name="hibernate.show_sql" 		value="true" /> 
-			<property name="hibernate.use_sql_comments" value="false" /> 
-  	 		<property name="hibernate.format_sql" 		value="true" />
-		</properties>
-		<!-- 
-		<properties>
-			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
-		    <property name="javax.persistence.jdbc.url"  value="jdbc:mysql://127.0.0.1:3306/agenda" />
-		    <property name="javax.persistence.jdbc.user"  value="root" />
-		    <property name="javax.persistence.jdbc.password" value="" />
-		    
-			<property name="hibernate.dialect"   		value="org.hibernate.dialect.MySQLDialect" />
-   			<property name="hibernate.hbm2ddl.auto" 	value="update" />  
-   			<property name="hibernate.show_sql" 		value="false" /> 
-			<property name="hibernate.use_sql_comments" value="false" /> 
-  	 		<property name="hibernate.format_sql" 		value="true" />
-		</properties>
--->	
-	</persistence-unit>		
-		
-		
-		
-		
-	<!--  ECLIPSELINK -->
-	<persistence-unit name="filmes-eclipselink" transaction-type="RESOURCE_LOCAL">
+<persistence version="2.0"
+       xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+            http://java.sun.com/xml/ns/persistence
+            http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="filmes" transaction-type="RESOURCE_LOCAL">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-		<exclude-unlisted-classes>false</exclude-unlisted-classes>
-		<properties>
-			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
-		    <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/filmes" />
-		    <property name="javax.persistence.jdbc.user" value="postgres" />
-		    <property name="javax.persistence.jdbc.password" value="ifpb" />	    
-			<property name="javax.persistence.schema-generation.database.action" 	value="create"/>
-            <property name="javax.persistence.schema-generation.scripts.action" 	value="create"/>  
-            <property name="javax.persistence.schema-generation.scripts.create-target" value="ddl.txt"/>
-		    <property name="eclipselink.logging.level" 	value="fine"/>	    
-		    <property name="eclipselink.logging.file" 	value="log.txt"/>	
-		</properties>		
-<!-- 
-		<properties>
-			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
-		    <property name="javax.persistence.jdbc.url"  value="jdbc:mysql://127.0.0.1:3306/agenda" />
-		    <property name="javax.persistence.jdbc.user"  value="root" />
-		    <property name="javax.persistence.jdbc.password" value="" />
-		    
-			<property name="javax.persistence.schema-generation.database.action" value="create"/>
-            <property name="javax.persistence.schema-generation.scripts.action" value="create"/>  
-            <property name="javax.persistence.schema-generation.scripts.create-target" value="ddl.txt"/>
-		    <property name="eclipselink.logging.level" value="fine"/>	    
-		    <property name="eclipselink.logging.file" value="log.txt"/>	
-		</properties>
--->
+        <class>modelo.Filme</class>
+        <class>modelo.Genero</class>
+        <class>modelo.Usuario</class>  
+        <class>modelo.Visualizacao</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        
+        <properties>
+            <property name="eclipselink.target-database" value="org.eclipse.persistence.nosql.adapters.mongo.MongoPlatform"/>
+            <property name="eclipselink.nosql.connection-spec" value="org.eclipse.persistence.nosql.adapters.mongo.MongoConnectionSpec"/>
+            <property name="eclipselink.nosql.property.mongo.port" value="27017"/>
+            <property name="eclipselink.nosql.property.mongo.host" value="127.0.0.1"/>
+            <property name="eclipselink.nosql.property.mongo.db" value="filmes"/>
+            <property name="eclipselink.logging.level" value="FINE"/>	
+		    <property name="eclipselink.logging.file" value="log.txt"/>    
+        </properties>
 	</persistence-unit>
-				
 </persistence>
-
-
-<!-- 
-<?xml version="1.0" encoding="UTF-8"?>
-<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
-  <persistence-unit name="default">    
-    <exclude-unlisted-classes>false</exclude-unlisted-classes>    
-  </persistence-unit>
-</persistence>
--->

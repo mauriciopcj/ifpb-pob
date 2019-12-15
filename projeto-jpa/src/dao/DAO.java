@@ -30,19 +30,8 @@ public abstract class DAO<T> implements DAOInterface<T> {
 	public static void open(){	
 		
 		if(manager==null){
-			//propriedades do persistence.xml  que podem ser sobrescritas		
-			HashMap<String,String> properties = new HashMap<String,String>();		
-			//			properties.put(PersistenceUnitProperties.JDBC_DRIVER, "org.postgresql.Driver" );	
-			//			properties.put(PersistenceUnitProperties.JDBC_URL, "jdbc:postgresql://localhost:5432/agenda");
-			//			properties.put(PersistenceUnitProperties.JDBC_USER, "postgres");
-			//			properties.put(PersistenceUnitProperties.JDBC_PASSWORD, "ifpb");
-			//			properties.put(PersistenceUnitProperties.LOGGING_LEVEL, "fine");
-			//			properties.put(PersistenceUnitProperties.LOGGING_FILE, "log.txt");
-			//			properties.put(PersistenceUnitProperties.SCHEMA_GENERATION_DATABASE_ACTION, "create");
-			//			properties.put(PersistenceUnitProperties.SCHEMA_GENERATION_SCRIPTS_ACTION, "create");						
-			//			properties.put(PersistenceUnitProperties.SCHEMA_GENERATION_SCRIPTS_ACTION, "create");
-			factory = Persistence.createEntityManagerFactory("filmes-eclipselink", properties);
-//			factory = Persistence.createEntityManagerFactory("filmes-hibernate", properties);
+			HashMap<String,String> properties = new HashMap<String,String>();
+			factory = Persistence.createEntityManagerFactory("filmes", properties);
 			manager = factory.createEntityManager();
 		}
 	}
@@ -50,7 +39,7 @@ public abstract class DAO<T> implements DAOInterface<T> {
 	public static void close(){
 		if(manager != null) {
 			manager.close();
-			manager = null;
+			factory.close();
 		}
 	}
 

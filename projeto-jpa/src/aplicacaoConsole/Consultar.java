@@ -18,14 +18,14 @@ public class Consultar {
 			System.out.println(Fachada.consultarGeneroPorNome("Act") );
 			System.out.println(Fachada.consultarGeneroPorFilme("Avatar"));
 			
-			System.out.println(Fachada.consultarFilmePorTitulo("va"));
-			System.out.println(Fachada.consultarFilmePorGenero("Action"));
-			
-			System.out.println(Fachada.consultarVisualizacaoPorUsuario("Mauricio"));
-			System.out.println(Fachada.consultarVisualizacaoPorFilme("Avatar"));
-		
-			System.out.println(Fachada.consultarVisualizacaoUsuarioPorGenero("Mauricio","Action"));
-			System.out.println(Fachada.consultarGeneroMaisAssistido());
+//			System.out.println(Fachada.consultarFilmePorTitulo("va"));
+//			System.out.println(Fachada.consultarFilmePorGenero("Action"));
+//			
+//			System.out.println(Fachada.consultarVisualizacaoPorUsuario("Mauricio"));
+//			System.out.println(Fachada.consultarVisualizacaoPorFilme("Avatar"));
+//		
+//			System.out.println(Fachada.consultarVisualizacaoUsuarioPorGenero("Mauricio","Action"));
+//			System.out.println(Fachada.consultarGeneroMaisAssistido());
 
 		} catch (Exception e) {
 			System.out.println(e.getMessage());

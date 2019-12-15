@@ -11,26 +11,30 @@ package modelo;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Index;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import org.eclipse.persistence.nosql.annotations.DataFormatType;
+import org.eclipse.persistence.nosql.annotations.Field;
+import org.eclipse.persistence.nosql.annotations.NoSql;
+
 @Entity
 @Table( indexes = @Index( columnList = "usuario" ))
+@NoSql(dataFormat=DataFormatType.MAPPED)
 public class Visualizacao{
 	
 	// MAPEAMENTO
 	
 	@Id		
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int id;
+	@GeneratedValue
+	@Field(name="_id")
+	private String id;
 	
-	@Column(columnDefinition = "TIMESTAMP")
+//	@Column(columnDefinition = "TIMESTAMP")
 	private LocalDateTime data;
 	
 	@ManyToOne

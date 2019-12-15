@@ -12,6 +12,7 @@ import java.util.List;
 import javax.persistence.NoResultException;
 import javax.persistence.Query;
 import modelo.Filme;
+import modelo.Genero;
 
 public class DAOFilme  extends DAO<Filme> {
 	
@@ -38,8 +39,13 @@ public class DAOFilme  extends DAO<Filme> {
 	}
 	
 	public List<Filme> consultarFilmePorGenero(String prefixo) {
+		
 		Query q = manager.createQuery("SELECT f FROM Filme f, IN (f.generos) g WHERE g.nome LIKE ?1");
 		q.setParameter(1, "%"+prefixo+"%");
+		
+//		Query q = manager.createNativeQuery("db.GENERO.find({NOME: "+ prefixo +"})", Genero.class);
+//		Genero g = (Genero) q.getSingleResult();
+//		Query q = manager.createNativeQuery("db.FILME.find({GENEROS__id:"+ prefixo +"})", Filme.class);
 		@SuppressWarnings("unchecked")
 		List<Filme> result = q.getResultList();
 		return result;

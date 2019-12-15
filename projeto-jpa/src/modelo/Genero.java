@@ -12,26 +12,33 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Index;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import org.eclipse.persistence.nosql.annotations.DataFormatType;
+import org.eclipse.persistence.nosql.annotations.Field;
+import org.eclipse.persistence.nosql.annotations.NoSql;
 
 @Entity
 @Table(name = "genero", indexes = { @Index( name= "index_nome_genero", columnList="nome" )})
+@NoSql(dataFormat=DataFormatType.MAPPED)
 public class Genero{
 	
 	private String nome;
 	
 	//MAPEAMENTO
 	
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int id;
+	@Id		
+	@GeneratedValue
+	@Field(name="_id")
+	private String id;
 	
-	@ManyToMany
+	@OneToMany(mappedBy="generos",fetch = FetchType.LAZY)
 	private List<Filme> filmes = new ArrayList<Filme>();
 	
 	// CONSTRUTOR
@@ -62,6 +69,10 @@ public class Genero{
 	}
 	
 	//  GETTERS E SETTERS
+	
+	public String getId() {
+		return id;
+	}
 	
 	public String getNome() {
 		return nome;

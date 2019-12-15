@@ -13,6 +13,7 @@ import java.util.List;
 import javax.persistence.NoResultException;
 import javax.persistence.Query;
 
+import modelo.Filme;
 import modelo.Genero;
 
 public class DAOGenero  extends DAO<Genero>{
@@ -41,8 +42,13 @@ public class DAOGenero  extends DAO<Genero>{
 	}
 	
 	public List<Genero> consultarGeneroPorFilme(String prefixo) {
-		Query q = manager.createQuery("SELECT g FROM Genero g, IN(g.filmes) f WHERE f.titulo LIKE ?1 ORDER BY g.nome");
-		q.setParameter(1, "%"+prefixo+"%");
+		Query q = manager.createQuery("SELECT f FROM Filme f WHERE f.titulo LIKE ?1");
+		q.setParameter(1, prefixo);
+		Filme f = (Filme) q.getSingleResult();
+		q = manager.createNativeQuery("db.GENERO.aggregate([{ $match: {FILMES__id:'"+f.getId()+"'}}])", Genero.class);
+		
+//		Query q = manager.createQuery("SELECT g FROM Genero g, IN(g.filmes) f WHERE f.titulo LIKE ?1 ORDER BY g.nome");
+//		q.setParameter(1, "%"+prefixo+"%");
 		@SuppressWarnings("unchecked")
 		List<Genero> result = q.getResultList();
 		return result;

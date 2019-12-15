@@ -26,7 +26,6 @@ import javax.imageio.ImageIO;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Index;
 import javax.persistence.JoinColumn;
@@ -38,8 +37,13 @@ import javax.persistence.PostPersist;
 import javax.persistence.Table;
 import javax.persistence.Version;
 
+import org.eclipse.persistence.nosql.annotations.DataFormatType;
+import org.eclipse.persistence.nosql.annotations.Field;
+import org.eclipse.persistence.nosql.annotations.NoSql;
+
 @Entity
 @Table(name = "filme", indexes = { @Index( name= "index_titulo_filme", columnList="titulo" )})
+@NoSql(dataFormat=DataFormatType.MAPPED)
 public class Filme {
 
 	private String titulo;
@@ -51,8 +55,9 @@ public class Filme {
 	// MAPEAMENTO
 	
 	@Id		
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int id;
+	@GeneratedValue
+	@Field(name="_id")
+	private String id;
 	
 	@Lob
 	private byte[] capa;
@@ -60,18 +65,13 @@ public class Filme {
 	@Version
 	private int versao;
 	
-	@ManyToMany(
+	@OneToMany(
 			mappedBy = "filmes", 
-			fetch = FetchType.EAGER
-			)
-	@JoinTable(
-			name = "filme_genero",
-			joinColumns = @JoinColumn(name = "id_filme", referencedColumnName = "id"),
-			inverseJoinColumns = @JoinColumn(name = "id_genero", referencedColumnName = "nome")
+			fetch = FetchType.LAZY
 			)
 	private List<Genero> generos = new ArrayList<Genero>();
 	
-	@OneToMany(mappedBy="filme")
+	@OneToMany(mappedBy="filme",fetch = FetchType.LAZY)
 	private List<Visualizacao> visualizacoes = new ArrayList<Visualizacao>();
 	
 	// CONSTRUTOR
@@ -148,6 +148,10 @@ public class Filme {
 	}
 	
 	//  GETTERS E SETTERS
+	
+	public String getId() {
+		return id;
+	}
 	
 	public int getVersao() {
 		return versao;
@@ -237,9 +241,9 @@ public class Filme {
 	public String toString() {
 		return "-----------------------------------" + 
 				"\nTitulo        | " + this.titulo + 
-				"\nClassificaï¿½ï¿½o | " + this.classificacao + 
+				"\nClassificação | " + this.classificacao + 
 				"\nAno           | " + this.ano + 
-				"\nDuraï¿½ï¿½o       | " + this.duracao + 
+				"\nDuração       | " + this.duracao + 
 				"\nGeneros       | " + (""+this.generos).replace("[","").replace("]","") + 
 				"\n-----------------------------------";
 	}

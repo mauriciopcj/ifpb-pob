@@ -14,18 +14,21 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Index;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import org.eclipse.persistence.nosql.annotations.DataFormatType;
+import org.eclipse.persistence.nosql.annotations.Field;
+import org.eclipse.persistence.nosql.annotations.NoSql;
+
 @Entity
 @Table(name = "usuario", indexes = { @Index( name= "index_nome_usuario", columnList="nome" )})
+@NoSql(dataFormat=DataFormatType.MAPPED)
 public class Usuario {
 	
 	private String nome;
@@ -35,13 +38,14 @@ public class Usuario {
 	// MAPEAMENTO
 	
 	@Id		
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int id;
+	@GeneratedValue
+	@Field(name="_id")
+	private String id;
 	
-	@Column(columnDefinition = "DATE")
+//	@Column(columnDefinition = "DATE")
 	private LocalDate dataNasc;
 	
-	@OneToMany(mappedBy="usuario")
+	@OneToMany(mappedBy="usuario",fetch = FetchType.LAZY)
 	private List<Visualizacao> visualizacoes = new ArrayList<Visualizacao>();
 
 	// CONSTRUCTOR
